@@ -140,3 +140,19 @@ Thanks the original [neuraltalk2](https://github.com/karpathy/neuraltalk2) and a
 ## Paper
 
 https://cs.stanford.edu/people/karpathy/cvpr2015.pdf
+
+## Example
+
+```bash
+python eval.py --model ./data/FC/fc-model.pth --infos_path ./data/FC/fc-infos.pkl --image_folder blah
+```
+
+```bash
+image 1: a zebra standing on top of a road
+evaluating validation preformance... -1/1 (0.000000)
+loss:  0.0
+```
+
+<p float="left">
+  <img src="./pix/zebra.jpg" width=300 />
+</p>
