@@ -11,6 +11,7 @@ import torch
 from torch.autograd import Variable
 import skimage
 import skimage.io
+from skimage.color import rgba2rgb
 import scipy.misc
 
 from torchvision import transforms as trn
@@ -104,6 +105,9 @@ class DataLoaderRaw():
             self.iterator = ri_next
 
             img = skimage.io.imread(self.files[ri])
+            if img.shape[2] == 4:
+                img = rgba2rgb(img)
+            print('test image shape:', img.shape)
 
             if len(img.shape) == 2:
                 img = img[:,:,np.newaxis]
