@@ -144,7 +144,7 @@ https://cs.stanford.edu/people/karpathy/cvpr2015.pdf
 ## Example
 
 ```bash
-python eval.py --model ./data/FC/fc-model.pth --infos_path ./data/FC/fc-infos.pkl --image_folder blah
+python eval.py --model ./data/FC/fc-model.pth --infos_path ./data/FC/fc-infos.pkl --image_folder ./pix
 ```
 
 ```bash
