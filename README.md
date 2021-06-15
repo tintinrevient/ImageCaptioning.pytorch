@@ -136,3 +136,7 @@ Of course, please cite the original paper of models you are using (You can find 
 ## Acknowledgements
 
 Thanks the original [neuraltalk2](https://github.com/karpathy/neuraltalk2) and awesome PyTorch team.
+
+## Paper
+
+https://cs.stanford.edu/people/karpathy/cvpr2015.pdf
