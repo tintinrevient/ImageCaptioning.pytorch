@@ -144,7 +144,7 @@ https://cs.stanford.edu/people/karpathy/cvpr2015.pdf
 ## Example
 
 ```bash
-python eval.py --model ./data/FC/fc-model.pth --infos_path ./data/FC/fc-infos.pkl --image_folder blah
+python eval.py --model ./data/FC/fc-model.pth --infos_path ./data/FC/fc-infos.pkl --image_folder ./pix
 ```
 
 ```bash
@@ -156,3 +156,9 @@ loss:  0.0
 <p float="left">
   <img src="./pix/zebra.jpg" width=300 />
 </p>
+
+It can also be visited by http://localhost:8000/:
+```bash
+cd vis
+python -m http.server
+```
